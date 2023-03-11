@@ -1,0 +1,103 @@
+/* Defined globally */
+:root{
+    --primary:black;
+    --secondary:#444;
+    --card-background-color:white;
+    --background-color:#eee;
+    --default-padding:20px;
+    --default-margin:40px;
+
+}
+
+.light{
+    --primary:rgb(15, 1, 1);
+    --secondary:#3b0808;
+    --card-background-color:rgb(226, 202, 202);
+    --background-color:rgb(243, 240, 240);
+    --default-padding:20px;
+    
+}
+
+
+.dark{
+    --primary:#fff;
+    --secondary:#ddd;
+    --card-background-color:#240707;
+    --background-color:#150101;
+    --default-padding:20px;
+}
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.container{
+    --my-var:red;
+    padding: var(--default-padding);
+    /* background-color: var(--card-background-color); */
+   /* background-color: var(--background-color); */
+  
+   
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+
+h1{
+    text-align: center;
+  color: var(--my-var);
+}
+
+
+p{
+    color: var(--secondary);
+}
+
+
+
+.box{
+    margin-block:var(--default-margin) ;
+  --my-var:rgb(4, 13, 1);/*overridden here*/
+    padding: var(--default-padding);
+    border-radius: 20px;
+    background-color: var(--card-background-color);
+    /* background-color:var(--my-var); */
+}
+
+
+
+
+.box h2{
+   color: var(--primary);
+    margin-bottom: var(--default-margin);
+     /* background-color:var(--my-var); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (min-width:800px) {
+    .container{
+        --my-var:orange;
+    }
+    
+}
+
+
+
+
+
