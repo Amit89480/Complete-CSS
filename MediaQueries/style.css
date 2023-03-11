@@ -1,0 +1,47 @@
+body{
+    background-color: red;
+}
+
+/* @media(max-width:400px) {
+    body{
+        background-color:rgb(221, 200, 200);
+    }
+}
+
+@media(max-width:200px) {
+    body{
+        background-color:rgb(14, 1, 1);
+    }
+} */
+
+
+/* @media(min-width:400px) {
+    body{
+        background-color:rgb(221, 200, 200);
+    }
+}
+
+@media(min-width:200px) {
+    body{
+        background-color:rgb(221, 167, 167);
+    }
+} */
+
+
+/* also can be like */
+
+/* @media(min-width:400px) and (max-width:600px){
+    body{
+        background-color: aquamarine;
+    }
+} */
+
+
+
+/* latest syntax */
+
+@media(400px<=width<=600px){
+    body{
+        background-color: whitesmoke;
+    }
+}

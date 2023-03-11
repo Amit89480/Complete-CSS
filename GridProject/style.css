@@ -89,3 +89,26 @@ grid-row: span 2;
     cursor: pointer;
 
 }
+
+
+
+/* Media queries for width<=1024px */
+
+@media screen and (max-width:1024px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .gallery{
+        width: 100%;
+    }
+
+    .box{
+        grid-row: span 1;
+        grid-column:span 3;
+    }
+    
+}
+
+
+/* https://tailwindcss.com/docs/screens */
