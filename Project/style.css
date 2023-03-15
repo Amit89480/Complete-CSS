@@ -36,7 +36,7 @@ h2{
     font-size: 2rem;
 }
 
-h2{
+h3{
     font-size: 1.5rem;
 }
 
@@ -75,6 +75,7 @@ ul{
 .main-nav{
     margin-top:20px;
 justify-content:space-between;
+position: relative;
 }
 
 .company-logo img{
@@ -90,6 +91,11 @@ justify-content:space-between;
     justify-content: end;
     gap: 40px;
 }
+
+.nav-toggle{
+    display: none;
+}
+
 /* header */
 
 header{
@@ -111,7 +117,7 @@ header{
 }
 
 .header-right img{
-width: 600px;
+width: 100%;
 }
 
 
@@ -129,8 +135,9 @@ width: 600px;
 }
 
 .logos{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex: wrap;
+    gap: 20px;
 }
 
 .logo{
@@ -153,6 +160,7 @@ width: 600px;
 max-width: 1180px;
 margin-inline: auto;
 padding: var(--padding-inline-section);
+overflow: hidden;
 }
 
 
@@ -205,6 +213,7 @@ transition: 0,2 ease-out;
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
+    text-align: center;
 }
 
 .primary-button:hover{
@@ -228,6 +237,7 @@ transition: 0,2 ease-out;
 
 .features-header{
     text-align: center;
+    margin-bottom: 40px;
 
 }
 
@@ -241,7 +251,7 @@ transition: 0,2 ease-out;
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
 }
 
 .features-card{
@@ -249,6 +259,7 @@ transition: 0,2 ease-out;
     gap: 20px;
     max-width: 30%;
     text-align: center;
+
 
 
 }
@@ -273,6 +284,10 @@ transition: 0,2 ease-out;
 
 }
 
+#second-big-feature{
+flex-direction: row-reverse;
+}
+
 .feature-img img{
     width: 100%;
 }
@@ -284,21 +299,28 @@ transition: 0,2 ease-out;
 .example-header{
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 }
 
 /* .example-heading-text{
     margin-bottom: 20px;
 } */
 
+
+.example-section{
+    padding: 80px var(--padding-inline-section);
+}
+
 .examples-area{
     justify-content: space-between;
     margin-block: 30px;
+    flex-wrap:wrap;
 }
 
 .example-card{
     width: 23%;
     position: relative;
-    min-height: 300px;
+    height: 300px;
    background:black;
     background:linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)),url(./assets/asset\ 37.jpeg);
     background-size: cover;
@@ -337,6 +359,7 @@ transition: 0,2 ease-out;
     flex-direction: column;
     gap: 30px;
     color: white;
+    text-align: center;
 }
 
 .cta-section{
@@ -369,6 +392,7 @@ footer{
 .footer-container{
     align-items: flex-start;
     justify-content: space-between;
+
 }
 
 
@@ -383,7 +407,9 @@ footer{
 .subfooter-container{
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
+
 
 
 
