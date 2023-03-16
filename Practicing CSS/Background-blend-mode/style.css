@@ -1,0 +1,12 @@
+body{
+    font-family: arial;
+}
+.container{
+    width: 440px;
+    height: 440px;
+    border: 2px solid black;
+    background-image: linear-gradient(to right,red,yellow),url('https://imgs.search.brave.com/OHdogEJAS-hN9OjhMqxpWRt3i5ebg1T5FYkH4CbZrn4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9waXh5/Lm9yZy9zcmMvNDgx/LzQ4MTgzMzkuanBn') ;
+   background-size: cover;
+    /* background-blend-mode: screen; */
+    background-blend-mode: multiply;
+}
