@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .card{
+background-color: rgb(112, 178, 178);
+width: 200px;
+height: 200px;
+position: absolute;
+top: 50%;
+left: 50%;
+justify-content: center;
+line-height: 160px;
+margin: -150px;
+color: #03446a;
+text-align: center;
+
+font-size: 40px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+animation-name: animate;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+
+    }
+
+    @keyframes animate {
+        from{
+            border-radius: 0%;
+        }
+        to{
+            border-radius: 50%;
+        }
+        
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+Card
+    </div>
+</body>
+</html>

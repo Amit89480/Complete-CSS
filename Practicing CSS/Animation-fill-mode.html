@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            width: 150px;
+            height: 150px;
+            background: black;
+            margin-left: 20px;
+            animation-name: animate;
+            animation-duration: 2s;
+            /* animation-iteration-count: 3; */
+            animation-fill-mode: both;
+        }
+        .main:hover{
+            animation-play-state: running;
+            /* animation-play-state: paused; */
+        }
+
+        @keyframes animate {
+            0%{
+                background-color: yellow;
+                width: 250px;
+            }
+
+            50%{
+                background-color: green;
+                width: 350px;
+            }
+            100%{
+                background-color: red;
+                width: 450px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>
