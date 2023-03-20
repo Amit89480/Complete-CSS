@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 300px;
+            height: 50px;
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flow-root;
+      
+        }
+        .child{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border: 1px solid black;
+            /* float: right; */
+
+            animation-name: animation;
+          animation-iteration-count: infinite;
+          animation-duration: 1s;
+          animation-direction: alternate;
+        }
+
+        @keyframes animation {
+            0%{
+              background-color: azure;
+       float: left;
+            }
+            50%{
+                align-items: center;
+                justify-content: center;
+            }
+          
+            100%{
+               
+           float: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Flow-root</h1>
+    <div class="main">
+<div class="child">
+
+</div>
+    </div>
+</body>
+</html>

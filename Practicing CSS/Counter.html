@@ -5,15 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            counter-reset: mycounter 0;
+        }
+
+        h2::before{
+            content: "chapter " counter(mycounter) " : ";
+            counter-increment:mycounter 1;
+        }
+    </style>
 </head>
 <body>
-<ol>
+<!-- <ol>
     <li>this is first - 1</li>
     <li>this is first - 2</li>
     <li>this is first - 3</li>
     <li>this is first - 4</li>
     <li>this is first - 5</li>
     <li>this is first - 6</li>
-</ol>
+</ol> -->
+
+<h2>Lorem ipsum dolor sit amet.</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fuga!</p>
+<h2>Lorem ipsum dolor sit amet.</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fuga!</p>
+<h2>Lorem ipsum dolor sit amet.</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fuga!</p>
+<h2>Lorem ipsum dolor sit amet.</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fuga!</p>
+<h2>Lorem ipsum dolor sit amet.</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fuga!</p>
 </body>
 </html>
