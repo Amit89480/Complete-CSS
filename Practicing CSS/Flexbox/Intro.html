@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+          
+            box-sizing: border-box;
+        }
+
+        section{
+            width: 100%;
+            background-color: rgb(186, 185, 223);
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+    
+        }
+        section div{
+            /* width: 30%; */
+            flex-basis: 30%;
+            padding: 20px;
+            border: 1px solid rgb(6, 6, 0);
+        }
+        .flex1 {
+            /* flex: 1; */
+            background-color: red;
+        }
+        .flex2{
+            /* flex: 2; */
+            background-color: yellow;
+          
+        }
+
+
+        .flex3{
+                /* flex: 1; */
+                background-color: green;
+        }
+
+
+        @media (max-width:760px){
+            
+        section{
+            width: 50%;
+            height: 300px;
+            background-color: rgb(186, 185, 223);
+            display: flex;
+          flex-wrap: wrap;
+            
+          
+            justify-content: space-between;
+         
+    
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div class="flex1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis reiciendis molestiae neque laudantium ducimus soluta quod labore necessitatibus ipsa ullam!</div>
+        <div class="flex2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis!</div>
+        <div class="flex3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis reiciendis molestiae neque laudantium ducimus soluta quod labore necessitatibus ipsa ullam!</div>
+    </section>
+
+
+</body>
+</html>

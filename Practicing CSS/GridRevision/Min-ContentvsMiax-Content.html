@@ -12,27 +12,19 @@
             width: 800px;
             height: 700px;
             display: grid;
-            grid-template-columns: 200px 200px 200px;
-            grid-template-rows: 200px 200px 200px;
-            /* justify-content: center; */
-           
-
-            /* align-items: center;
-            justify-items: center; */
-
-            justify-content: center;
-            align-content: center;
+            /* grid-template-columns: 200px 200px 1fr; */
+            /* grid-template-columns: 200px 200px max-content;  */
+            grid-template-columns: repeat(2,200px) minmax(200px,min-content); 
+            grid-template-rows: repeat(2,minmax(min-content,150px));
+         
       
             
            
         }
 
 
-        .items{
-            display: grid;
-            justify-items: center;
-            align-items: center;
-        }
+     
+        
         .child1{
             background-color: red;
         }
@@ -51,13 +43,8 @@
         .child6{
             background-color: rgb(16, 110, 52);
 
-            /* It works inline */
-            display: grid;
-            /* justify-self:end;
-            align-self: start; */
-
-            justify-self: center;
-            align-self: center ;
+          
+          
         }
 
    
@@ -71,7 +58,7 @@
         <div class="items child3">Child-3</div>
         <div class="items child4">Child-4</div>
         <div class="items child5">Child-5</div>
-        <div class="items child6">Child-6</div>
+        <div class="items child6">Lorem ipsum dolor, sit amet consectetur adipisicing </div>
     </div>
 </body>
 </html>
